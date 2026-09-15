@@ -1,0 +1,37 @@
+.process-section {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.process-section i {
+  color: var(--metallic-color);
+  font-size: 2rem;
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.index {
+  padding: 1rem;
+  background-color: var(--metallic-color);
+  border-radius: 50%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: flex-start;
+}
+
+.card-body i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color) !important;
+}

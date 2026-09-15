@@ -1,0 +1,37 @@
+.application-section {
+  padding: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-description {
+  display: block;
+  width: 20rem;
+}
+
+.content {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.info-card {
+  border: 1px solid var(--metallic-color);
+  padding: 1rem 3rem;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--card-background-color);
+  border-radius: 5px;
+}
+
+.info-card i {
+  font-size: 3rem;
+}
