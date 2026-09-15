@@ -1,0 +1,84 @@
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.main-context {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+  padding: 5rem;
+  color: var(--secondary-color);
+}
+
+.primary-color-text {
+  color: var(--primary-color);
+}
+
+.button-panel {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.info-panel {
+  display: flex;
+}
+
+.info-panel span {
+  padding: 0 1rem;
+}
+
+.info-panel span:not(:last-child) {
+  border-right: 1px solid var(--secondary-color);
+}
+
+.main-img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.stats-ribbon {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+}
+
+.stats-container {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stats-container i {
+  font-size: 2rem;
+  color: var(--metallic-color);
+}
+
+.stats-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.vertical-divider {
+  width: 2px;
+  background-color: var(--metallic-color);
+  height: 2rem;
+  align-self: center;
+}

@@ -1,1 +1,378 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #8b0000;
+  --secondary-color: #111111;
+  --tertiary-color: #f5f0e8;
+  --metallic-color: #b8a58d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--tertiary-color);
+}
+
+/* =====================================================
+   SDFORGMAC TYPOGRAPHY SYSTEM
+   ===================================================== */
+
+/* -----------------------------------------------------
+   1. HERO / DISPLAY TEXT
+   ----------------------------------------------------- */
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1.2px;
+}
+
+.hero-title-accent {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1.2px;
+}
+
+/* -----------------------------------------------------
+   2. SECTION HEADINGS
+   ----------------------------------------------------- */
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: -0.6px;
+}
+
+.section-title-small {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: -0.3px;
+}
+
+/* -----------------------------------------------------
+   3. CARD / COMPONENT HEADINGS
+   ----------------------------------------------------- */
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.card-title-small {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/* -----------------------------------------------------
+   4. EYEBROW / OVERLINE TEXT
+   ----------------------------------------------------- */
+
+.eyebrow-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.eyebrow-text-large {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+/* -----------------------------------------------------
+   5. BODY COPY
+   ----------------------------------------------------- */
+
+.body-large {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.body-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.body-small {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* -----------------------------------------------------
+   6. NAVIGATION
+   ----------------------------------------------------- */
+
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.nav-link-active {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* -----------------------------------------------------
+   7. BUTTONS
+   ----------------------------------------------------- */
+
+.button-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.button-text-small {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+/* -----------------------------------------------------
+   8. LABELS / CAPTIONS
+   ----------------------------------------------------- */
+
+.captions-labels {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.small-helper-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.micro-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* -----------------------------------------------------
+   9. STATS / NUMBERS
+   ----------------------------------------------------- */
+
+.stat-number {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.stat-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* -----------------------------------------------------
+   10. FEATURE / BENEFIT TEXT
+   ----------------------------------------------------- */
+
+.feature-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.feature-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* -----------------------------------------------------
+   11. PROCESS STEPS
+   ----------------------------------------------------- */
+
+.step-number {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.step-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.step-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* -----------------------------------------------------
+   12. LINKS
+   ----------------------------------------------------- */
+
+.text-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.text-link-large {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* -----------------------------------------------------
+   13. FORM TYPOGRAPHY
+   ----------------------------------------------------- */
+
+.form-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.form-input-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* -----------------------------------------------------
+   14. FAQ
+   ----------------------------------------------------- */
+
+.faq-question {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.faq-answer {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+/* -----------------------------------------------------
+   15. CTA BANNER
+   ----------------------------------------------------- */
+
+.cta-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.cta-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* -----------------------------------------------------
+   16. FOOTER
+   ----------------------------------------------------- */
+
+.footer-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer-contact {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.footer-meta {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+}
+
+/* -----------------------------------------------------
+   17. BADGES / MATERIAL TAGS
+   ----------------------------------------------------- */
+
+.tag-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+/* -----------------------------------------------------
+   18. IMAGE OVERLAY TEXT
+   ----------------------------------------------------- */
+
+.image-overlay-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,87 @@
+:host {
+  display: inline-block;
+  cursor: pointer !important;
+}
+
+:host * {
+  cursor: pointer !important;
+}
+
+button {
+  cursor: pointer !important;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  gap: 0.5rem;
+  width: var(--buttonWidth, fit-content);
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer !important;
+}
+
+button * {
+  cursor: pointer !important;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.6;
+}
+
+button:disabled * {
+  cursor: not-allowed !important;
+}
+
+.medium {
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+}
+
+.small {
+  padding: 0.3rem 0.5rem;
+  margin: 0.1rem;
+}
+
+.large {
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
+}
+
+.larger {
+  width: 100%;
+  padding: 1rem 2.5rem;
+}
+
+.no-bg-secondary-color-no-border {
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-color);
+}
+
+.no-bg-secondary-color-no-border:hover {
+  color: var(--primary-color);
+}
+
+.primary-bg-tertiary-color-no-border {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.primary-bg-tertiary-color-no-border:hover {
+  background-color: var(--metallic-color);
+  color: var(--primary-color);
+}
+
+.no-bg-primary-color-primary-border {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.no-bg-primary-color-primary-border:hover {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}

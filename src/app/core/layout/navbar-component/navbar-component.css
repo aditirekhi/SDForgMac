@@ -1,0 +1,16 @@
+.navbar {
+  width: 100%;
+  background-color: var(--tertiary-color);
+  height: 4rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--secondary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-image {
+  height: inherit;
+  width: auto;
+  object-fit: cover;
+}

@@ -1,0 +1,11 @@
+<button [class]="buttonClass()">
+  @if (addIcon() && leftIcon() && iconClass()) {
+    <i [class]="iconClass()"></i>
+  }
+  @if (!iconOnly()) {
+    <ng-content></ng-content>
+  }
+  @if (addIcon() && !leftIcon() && iconClass()) {
+    <i [class]="iconClass()"></i>
+  }
+</button>
