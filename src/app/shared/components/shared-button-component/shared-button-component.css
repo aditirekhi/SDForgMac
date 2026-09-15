@@ -85,3 +85,15 @@ button:disabled * {
   background-color: var(--primary-color);
   color: var(--tertiary-color);
 }
+
+.no-bg-primary-color-no-border {
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color);
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.no-bg-primary-color-no-border:hover {
+  color: var(--metallic-color);
+}

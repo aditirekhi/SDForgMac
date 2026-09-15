@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SharedButtonComponent } from '../../../shared/components/shared-button-component/shared-button-component';
 
 @Component({
-  imports: [],
-  selector: 'app-manufacturing-component',
+  imports: [SharedButtonComponent],
+  selector: 'manufacturing-component',
   styleUrl: './manufacturing-component.css',
   templateUrl: './manufacturing-component.html',
 })
-export class ManufacturingComponent {}
+export class ManufacturingComponent { }
