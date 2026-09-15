@@ -15,6 +15,51 @@ body {
   background-color: var(--tertiary-color);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero-title,
+  .hero-title-accent {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .section-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .section-title-small {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title,
+  .hero-title-accent {
+    font-size: 34px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .eyebrow-text,
+  .eyebrow-text-large {
+    letter-spacing: 1.5px;
+  }
+}
+
 /* =====================================================
    SDFORGMAC TYPOGRAPHY SYSTEM
    ===================================================== */

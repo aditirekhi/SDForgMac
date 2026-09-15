@@ -18,6 +18,8 @@
   align-items: start;
   padding: 5rem;
   color: var(--secondary-color);
+  flex: 1 1 50%;
+  min-width: 0;
 }
 
 .primary-color-text {
@@ -27,6 +29,7 @@
 .button-panel {
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .info-panel {
@@ -43,8 +46,10 @@
 
 .main-img {
   width: 50%;
+  max-width: 50%;
   height: auto;
   object-fit: cover;
+  align-self: stretch;
 }
 
 .stats-ribbon {
@@ -78,6 +83,66 @@
 
 .vertical-divider {
   width: 2px;
+  align-self: stretch;
+}
+
+@media (max-width: 900px) {
+  .main-context {
+    padding: 3rem;
+  }
+
+  .stats-ribbon {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .stats-container {
+    flex: 1 1 40%;
+    justify-content: center;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .main-context,
+  .main-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main-context {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .info-panel {
+    flex-wrap: wrap;
+    gap: 0.5rem 0;
+  }
+
+  .info-panel span {
+    padding: 0 0.75rem;
+  }
+
+  .stats-ribbon {
+    padding: 1rem 0.5rem;
+  }
+
+  .stats-container {
+    flex-basis: 45%;
+    padding: 0 0.25rem;
+  }
+
+  .stats-container i {
+    font-size: 1.5rem;
+  }
+}
   background-color: var(--metallic-color);
   height: 2rem;
   align-self: center;

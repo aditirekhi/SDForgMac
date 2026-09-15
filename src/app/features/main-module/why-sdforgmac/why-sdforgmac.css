@@ -3,18 +3,23 @@
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 .content {
   display: flex;
   gap: 2rem;
+  flex: 1 1 60%;
+  justify-content: space-between;
 }
 
 .info-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .card-icon i {
@@ -38,4 +43,32 @@
   width: 1px;
   background-color: var(--metallic-color);
   margin: 0 1rem;
+}
+
+@media (max-width: 900px) {
+  .why-sdforgmac-section {
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .why-sdforgmac-section {
+    padding: 2.5rem 1.25rem;
+    gap: 2rem;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1rem;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
 }

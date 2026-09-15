@@ -1,16 +1,51 @@
 .navbar {
   width: 100%;
   background-color: var(--tertiary-color);
-  height: 4rem;
-  padding: 0 1rem;
+  min-height: 4rem;
+  padding: 0.5rem 1rem;
   border-bottom: 1px solid var(--secondary-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 0.25rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo-image {
-  height: inherit;
+  height: 3rem;
   width: auto;
-  object-fit: cover;
+  object-fit: contain;
+  margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .logo-image {
+    margin-right: 0.5rem;
+  }
+
+  .navbar shared-button-component {
+    flex: 0 1 auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .logo-image {
+    width: 100%;
+    height: 2.75rem;
+    margin: 0 0 0.25rem;
+  }
+
+  .navbar shared-button-component {
+    flex: 1 1 auto;
+    min-width: 8rem;
+    text-align: center;
+  }
+
+  .navbar shared-button-component:last-child {
+    flex-basis: 100%;
+  }
 }

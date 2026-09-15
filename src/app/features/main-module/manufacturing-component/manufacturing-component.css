@@ -36,8 +36,30 @@
 .card-content {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .card-description {
   color: color-mix(in srgb, var(--secondary-color) 80%, transparent 20%);
+}
+
+@media (max-width: 650px) {
+  .manufacturing-section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+
+  .card-icon {
+    width: 4rem;
+    height: 4rem;
+    flex: 0 0 4rem;
+  }
 }

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .process-section i {
@@ -28,10 +29,39 @@
   flex-direction: column;
   align-items: self-start;
   justify-content: flex-start;
+  min-width: 0;
 }
 
 .card-body i {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--secondary-color) !important;
+}
+
+@media (max-width: 900px) {
+  .process-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+  }
+
+  .process-section > shared-section-header-component {
+    grid-column: 1 / -1;
+  }
+
+  .process-section > .fa-angle-right {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .process-section {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1.25rem;
+    gap: 1.5rem;
+  }
+
+  .process-section > .info-card {
+    width: 100%;
+  }
 }
