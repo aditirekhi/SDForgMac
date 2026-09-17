@@ -1,8 +1,3 @@
-.why-sdforgmac-section {
-  opacity: 1;
-  transition: opacity var(--motion-slow) var(--ease-soft);
-}
-
 .info-card {
   opacity: 1;
   transform: translateX(0);
@@ -11,27 +6,23 @@
     transform var(--motion-slow) var(--ease-standard);
 }
 
-.why-sdforgmac-section.motion-ready {
-  opacity: 0;
-}
-
 .why-sdforgmac-section.motion-ready .info-card {
   opacity: 0;
-  transform: translateX(-16px);
+  transform: translateY(16px);
 }
 
 .why-sdforgmac-section.is-visible .info-card {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
-.why-sdforgmac-section.is-visible .info-card:nth-of-type(2) {
+.why-sdforgmac-section.is-visible .info-card:nth-child(3) {
   transition-delay: 120ms;
 }
-.why-sdforgmac-section.is-visible .info-card:nth-of-type(3) {
+.why-sdforgmac-section.is-visible .info-card:nth-child(5) {
   transition-delay: 240ms;
 }
-.why-sdforgmac-section.is-visible .info-card:nth-of-type(4) {
+.why-sdforgmac-section.is-visible .info-card:nth-child(7) {
   transition-delay: 360ms;
 }
 
