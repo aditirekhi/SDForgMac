@@ -9,7 +9,6 @@ import { AboutUs } from '../main-module/about-us/about-us';
 @Component({
   imports: [HeroComponent, ManufacturingComponent, WhySdforgmac, ApplicationsComponent, ProcessComponent, AboutUs],
   selector: 'main-component',
-  styleUrl: './main-component.css',
   templateUrl: './main-component.html',
 })
 export class MainComponent { }

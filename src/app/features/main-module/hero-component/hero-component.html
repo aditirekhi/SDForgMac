@@ -1,60 +1,82 @@
-<main class="hero-main">
-  <section class="hero-section">
-    <div class="main-context">
+<main class="flex w-full flex-col">
+  <section class="relative flex items-center overflow-hidden max-[650px]:flex-col">
+    <div
+      class="main-context flex min-w-0 flex-1 basis-1/2 flex-col items-start gap-2 p-4 text-[var(--secondary-color)] min-[901px]:p-12 max-[650px]:w-full max-[650px]:p-5"
+    >
       <span class="eyebrow-text">PRECISION COMPONENTS FOR A STRONGER TOMORROW</span>
       <span class="hero-title">Precision Forging & CNCMachining,</span>
-      <span class="hero-title primary-color-text">Built for Industry.</span>
+      <span class="hero-title text-[var(--primary-color)]">Built for Industry.</span>
       <p class="body-text">
         SDForgMac delivers high quality forged and machined components from Faridabad, Haryana,
         supporting diverse industrial needs with precision, reliability and expertise.
       </p>
-      <div class="button-panel">
+      <div class="flex flex-wrap gap-2">
         <shared-button-component
-          buttonClass="primary-bg-tertiary-color-no-border button-text large"
+          buttonClass="button-text m-2 rounded-lg bg-[var(--primary-color)] px-6 py-2 text-[var(--tertiary-color)] hover:bg-[var(--metallic-color)] hover:text-[var(--primary-color)] metallic-sweep"
           [addIcon]="true"
           iconClass="fa-solid fa-arrow-right"
           >Get a Quote</shared-button-component
         >
-        <shared-button-component buttonClass="no-bg-primary-color-primary-border button-text large"
+        <shared-button-component
+          buttonClass="button-text m-2 rounded-lg border border-[var(--primary-color)] px-6 py-2 text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-[var(--tertiary-color)]"
           >Explore Capabilities</shared-button-component
         >
       </div>
-      <div class="info-panel">
-        <span>COMPONENTS</span>
-        <span>CAPABILITIES</span>
-        <span>LONG-TERMPARTNERSHIPS</span>
+      <div class="flex flex-wrap gap-y-2">
+        <span
+          class="px-4 max-[650px]:px-3 [&:not(:last-child)]:border-r [&:not(:last-child)]:border-[var(--secondary-color)]"
+          >COMPONENTS</span
+        >
+        <span
+          class="px-4 max-[650px]:px-3 [&:not(:last-child)]:border-r [&:not(:last-child)]:border-[var(--secondary-color)]"
+          >CAPABILITIES</span
+        >
+        <span class="px-4 max-[650px]:px-3">LONG-TERMPARTNERSHIPS</span>
       </div>
     </div>
-    <img src="/assets/MainPage/hero-image.png" class="main-img" />
+    <img
+      src="assets/MainPage/hero-image.png"
+      class="main-img h-auto w-1/2 max-w-1/2 self-stretch object-contain max-[650px]:w-full max-[650px]:max-w-full"
+    />
   </section>
-  <section class="stats-ribbon">
-    <span class="stats-container">
+  <section
+    class="stats-ribbon flex w-full items-center justify-around bg-[var(--secondary-color)] p-4 text-[var(--tertiary-color)] max-[900px]:flex-wrap max-[900px]:gap-4 max-[650px]:px-2"
+  >
+    <span
+      class="stats-container flex items-center gap-2 px-4 max-[900px]:basis-2/5 max-[900px]:justify-center max-[650px]:basis-[45%] max-[650px]:px-1"
+    >
       <i class="fa-solid fa-gear"></i>
-      <span class="stats-text">
-        <label class="card-title-small">10+</label>
+      <span class="flex flex-col items-start justify-center">
+        <label class="card-title-small stats-value">0+</label>
         <label class="small-helper-text">YEARS OF EXPERIENCE</label>
       </span>
     </span>
-    <div class="vertical-divider"></div>
-    <span class="stats-container">
+    <div class="h-8 w-0.5 self-stretch bg-[var(--metallic-color)] max-[900px]:hidden"></div>
+    <span
+      class="stats-container flex items-center gap-2 px-4 max-[900px]:basis-2/5 max-[900px]:justify-center max-[650px]:basis-[45%] max-[650px]:px-1"
+    >
       <i class="fa-solid fa-users"></i>
-      <span class="stats-text">
-        <label class="card-title-small">500+</label>
+      <span class="flex flex-col items-start justify-center">
+        <label class="card-title-small stats-value">0+</label>
         <label class="small-helper-text">SATISFIED CLIENTS</label>
       </span>
     </span>
-    <div class="vertical-divider"></div>
-    <span class="stats-container">
+    <div class="h-8 w-0.5 self-stretch bg-[var(--metallic-color)] max-[900px]:hidden"></div>
+    <span
+      class="stats-container flex items-center gap-2 px-4 max-[900px]:basis-2/5 max-[900px]:justify-center max-[650px]:basis-[45%] max-[650px]:px-1"
+    >
       <i class="fa-solid fa-cubes"></i>
-      <span class="stats-text">
-        <label class="card-title-small">1000+</label>
+      <span class="flex flex-col items-start justify-center">
+        <label class="card-title-small stats-value">0+</label>
         <label class="small-helper-text">COMPONENTS DELIERED</label>
       </span>
     </span>
-    <div class="vertical-divider"></div>
-    <span class="stats-container">
+    <div class="h-8 w-0.5 self-stretch bg-[var(--metallic-color)] max-[900px]:hidden"></div>
+    <span
+      class="stats-container flex items-center gap-2 px-4 max-[900px]:basis-2/5 max-[900px]:justify-center max-[650px]:basis-[45%] max-[650px]:px-1"
+    >
       <i class="fa-solid fa-globe"></i>
-      <span class="stats-text">
+      <span class="flex flex-col items-start justify-center">
         <label class="card-title-small">INDUSTRIES</label>
         <label class="small-helper-text">SERVED GLOBALLY</label>
       </span>

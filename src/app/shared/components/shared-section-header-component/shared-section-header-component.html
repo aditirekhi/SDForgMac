@@ -1,5 +1,5 @@
-<div class="header" [style.color]="'var(--' + color() + '-color)'">
+<div class="header flex flex-col items-start" [style.color]="'var(--' + color() + '-color)'">
   <label class="eyebrow-text"><ng-content select="[small-section-title]"></ng-content></label>
   <label class="section-title"><ng-content select="[section-title]"></ng-content></label>
-  <div class="underline"></div>
+  <div class="h-1 w-20 bg-[var(--metallic-color)]"></div>
 </div>

@@ -1,22 +1,33 @@
-<section class="navbar">
-  <img src="assets/Logo/main-logo.png" routerLink="home" class="logo-image" />
-  <shared-button-component buttonClass="no-bg-secondary-color-no-border medium nav-link"
+<section
+  class="navbar sticky top-0 z-10 flex min-h-16 w-full flex-nowrap items-center justify-center border-b border-[var(--secondary-color)] bg-[rgb(245_240_232_/_92%)] px-4 py-2 backdrop-blur transition max-[650px]:flex-wrap max-[650px]:p-2"
+>
+  <img
+    src="assets/Logo/main-logo.png"
+    routerLink="home"
+    class="mr-auto h-12 w-auto object-contain mix-blend-multiply max-[650px]:mb-1 max-[650px]:h-11 max-[650px]:w-full max-[650px]:mr-0"
+  />
+  <shared-button-component
+    buttonClass="m-1 px-4 py-2 text-[var(--secondary-color)] hover:text-[var(--primary-color)] nav-link max-[650px]:min-w-32 max-[650px]:flex-1"
     >CNC Machining Services
   </shared-button-component>
-  <shared-button-component buttonClass="no-bg-secondary-color-no-border medium nav-link"
+  <shared-button-component
+    buttonClass="m-1 px-4 py-2 text-[var(--secondary-color)] hover:text-[var(--primary-color)] nav-link max-[650px]:min-w-32 max-[650px]:flex-1"
     >Cold Forging Services</shared-button-component
   >
-  <shared-button-component buttonClass="no-bg-secondary-color-no-border medium nav-link"
+  <shared-button-component
+    buttonClass="m-1 px-4 py-2 text-[var(--secondary-color)] hover:text-[var(--primary-color)] nav-link max-[650px]:min-w-32 max-[650px]:flex-1"
     >Industrial Component Manufacturing</shared-button-component
   >
-  <shared-button-component buttonClass="no-bg-secondary-color-no-border medium nav-link"
+  <shared-button-component
+    buttonClass="m-1 px-4 py-2 text-[var(--secondary-color)] hover:text-[var(--primary-color)] nav-link max-[650px]:min-w-32 max-[650px]:flex-1"
     >About Us</shared-button-component
   >
-  <shared-button-component buttonClass="no-bg-secondary-color-no-border medium nav-link"
+  <shared-button-component
+    buttonClass="m-1 px-4 py-2 text-[var(--secondary-color)] hover:text-[var(--primary-color)] nav-link max-[650px]:min-w-32 max-[650px]:flex-1"
     >Contact Us</shared-button-component
   >
   <shared-button-component
-    buttonClass="primary-bg-tertiary-color-no-border medium nav-link"
+    buttonClass="m-1 px-4 py-2 bg-[var(--primary-color)] text-[var(--tertiary-color)] hover:bg-[var(--metallic-color)] hover:text-[var(--primary-color)] metallic-sweep nav-link max-[650px]:basis-full"
     [addIcon]="true"
     iconClass="fa-solid fa-arrow-right"
     >Request a Quote</shared-button-component

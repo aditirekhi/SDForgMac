@@ -1,56 +1,64 @@
-<section class="manufacturing-section">
+<section class="manufacturing-section p-12 max-[650px]:px-5 max-[650px]:py-10">
   <shared-section-header-component>
     <span small-section-title>OUR EXPERTISE</span>
     <span section-title>Manufaturing Capabilitis</span>
   </shared-section-header-component>
-  <div class="content">
-    <div class="info-card">
-      <span class="card-icon">
-        <i class="fa-solid fa-screwdriver-wrench"></i>
+  <div
+    class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 my-4 max-[650px]:grid-cols-1 max-[650px]:gap-4"
+  >
+    <div class="info-card flex gap-4 rounded-lg border border-[var(--metallic-color)] p-4">
+      <span
+        class="card-icon flex h-20 w-20 shrink-0 aspect-square items-center justify-center rounded-full bg-[var(--metallic-color)] max-[650px]:h-16 max-[650px]:w-16"
+      >
+        <i class="fa-solid fa-screwdriver-wrench text-2xl text-[var(--secondary-color)]"></i>
       </span>
-      <span class="card-content">
+      <span class="card-content flex min-w-0 flex-col">
         <label class="card-title">CNC Machining Services</label>
         <p class="body-small card-description">
           High precision CNC machining for complex and critical components with consistent quality
           and dimensional accuracy.
         </p>
         <shared-button-component
-          buttonClass="no-bg-primary-color-no-border small"
+          buttonClass="text-[var(--primary-color)] hover:text-[var(--metallic-color)]"
           [addIcon]="true"
           iconClass="fa-solid fa-arrow-right"
           >Learn More</shared-button-component
         >
       </span>
     </div>
-    <div class="info-card">
-      <span class="card-icon">
-        <i class="fa-solid fa-wrench"></i>
+    <div class="info-card flex gap-4 rounded-lg border border-[var(--metallic-color)] p-4">
+      <span
+        class="card-icon flex h-20 w-20 shrink-0 aspect-square items-center justify-center rounded-full bg-[var(--metallic-color)] max-[650px]:h-16 max-[650px]:w-16"
+      >
+        <i class="fa-solid fa-wrench text-2xl text-[var(--secondary-color)]"></i>
       </span>
-      <span class="card-content">
+      <span class="card-content flex min-w-0 flex-col">
         <label class="card-title">Cold Forging Services</label>
         <p class="body-small card-description">
           Advanced cold forging solutions for high strength, high volume and customized components.
         </p>
         <shared-button-component
-          buttonClass="no-bg-primary-color-no-border small"
+          buttonClass="text-[var(--primary-color)] hover:text-[var(--metallic-color)]"
           [addIcon]="true"
           iconClass="fa-solid fa-arrow-right"
           >Learn More</shared-button-component
         >
       </span>
     </div>
-    <div class="info-card">
-      <span class="card-icon">
-        <i class="fa-solid fa-cube"></i>
+    <div class="info-card flex gap-4 rounded-lg border border-[var(--metallic-color)] p-4">
+      <span
+        class="card-icon flex h-20 w-20 shrink-0 aspect-square items-center justify-center rounded-full bg-[var(--metallic-color)] max-[650px]:h-16 max-[650px]:w-16"
+      >
+        <i class="fa-solid fa-cube text-2xl text-[var(--secondary-color)]"></i>
       </span>
-      <span class="card-content">
+      <span class="card-content flex min-w-0 flex-col">
         <label class="card-title">Industrial Component Manufacturing</label>
         <p class="body-small card-description">
           Wide range of industrial components manufactured to meet diverse application meeds across
           industries.
         </p>
         <shared-button-component
-          buttonClass="no-bg-primary-color-no-border small"
+          buttonClass="text-[var(--primary-color)] hover:text-[var(--metallic-color)]"
           [addIcon]="true"
           iconClass="fa-solid fa-arrow-right"
           >Learn More</shared-button-component

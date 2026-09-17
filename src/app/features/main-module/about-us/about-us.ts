@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
 import { SharedSectionHeaderComponent } from '../../../shared/components/shared-section-header-component/shared-section-header-component';
 import { SharedButtonComponent } from '../../../shared/components/shared-button-component/shared-button-component';
 
@@ -8,4 +8,21 @@ import { SharedButtonComponent } from '../../../shared/components/shared-button-
   styleUrl: './about-us.css',
   templateUrl: './about-us.html',
 })
-export class AboutUs { }
+export class AboutUs implements AfterViewInit {
+  constructor(private readonly elementRef: ElementRef<HTMLElement>) { }
+
+  ngAfterViewInit(): void {
+    const section = this.elementRef.nativeElement.querySelector<HTMLElement>('.about-us-section');
+    if (!section || typeof IntersectionObserver === 'undefined') {
+      section?.classList.add('is-visible');
+      return;
+    }
+    section.classList.add('motion-ready');
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      section.classList.add('is-visible');
+      observer.disconnect();
+    }, { threshold: 0.2 });
+    observer.observe(section);
+  }
+}

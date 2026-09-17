@@ -1,109 +1,30 @@
 :host {
   display: inline-block;
-  cursor: pointer !important;
 }
 
-:host * {
-  cursor: pointer !important;
+button i {
+  transition: transform var(--motion-fast) var(--ease-standard);
 }
 
-button {
-  cursor: pointer !important;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-  gap: 0.5rem;
-  width: var(--buttonWidth, fit-content);
-  border-radius: 0.5rem;
+button:hover i {
+  transform: translateX(4px);
 }
 
-button:hover {
-  cursor: pointer !important;
+.metallic-sweep {
+  position: relative;
+  overflow: hidden;
 }
 
-button * {
-  cursor: pointer !important;
+.metallic-sweep::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 35%, rgb(255 255 255 / 25%), transparent 65%);
+  transform: translateX(-120%);
+  transition: transform 600ms var(--ease-soft);
+  pointer-events: none;
 }
 
-button:disabled {
-  cursor: not-allowed !important;
-  opacity: 0.6;
-}
-
-button:disabled * {
-  cursor: not-allowed !important;
-}
-
-.medium {
-  padding: 0.5rem 1rem;
-  margin: 0.2rem;
-}
-
-.small {
-  padding: 0.3rem 0.5rem;
-  margin: 0.1rem;
-}
-
-.large {
-  padding: 0.5rem 1.5rem;
-  margin: 0.5rem;
-}
-
-.larger {
-  width: 100%;
-  padding: 1rem 2.5rem;
-}
-
-.no-bg-secondary-color-no-border {
-  background-color: transparent;
-  border: none;
-  color: var(--secondary-color);
-}
-
-.no-bg-secondary-color-no-border:hover {
-  color: var(--primary-color);
-}
-
-.primary-bg-tertiary-color-no-border {
-  background-color: var(--primary-color);
-  color: var(--tertiary-color);
-}
-
-.primary-bg-tertiary-color-no-border:hover {
-  background-color: var(--metallic-color);
-  color: var(--primary-color);
-}
-
-.no-bg-primary-color-primary-border {
-  background-color: transparent;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-}
-
-.no-bg-primary-color-primary-border:hover {
-  background-color: var(--primary-color);
-  color: var(--tertiary-color);
-}
-
-.no-bg-primary-color-no-border {
-  background-color: transparent;
-  border: none;
-  color: var(--primary-color);
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.no-bg-primary-color-no-border:hover {
-  color: var(--metallic-color);
-}
-
-.tertiary-bg-primary-color-no-border {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
-}
-
-.tertiary-bg-primary-color-no-border:hover {
-  background-color: var(--metallic-color);
-  color: var(--primary-color);
+.metallic-sweep:hover::before {
+  transform: translateX(120%);
 }

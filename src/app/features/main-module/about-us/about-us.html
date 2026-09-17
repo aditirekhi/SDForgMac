@@ -1,6 +1,8 @@
-<section class="about-us-section">
-  <img src="assets/MainPage/about-us.png" class="section-image" />
-  <div class="section-content">
+<section
+  class="about-us-section grid w-full grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)_2px_minmax(0,1fr)] items-stretch gap-8 overflow-hidden max-[768px]:flex max-[768px]:flex-col max-[768px]:gap-6 max-[768px]:p-5"
+>
+  <img src="assets/MainPage/about-us.png" class="section-image h-auto w-full object-contain" />
+  <div class="section-content min-w-0 p-12">
     <shared-section-header-component>
       <label small-section-title>ABOUT US</label>
       <label section-title>A Commitment to Quality and Long-Term Partnerships</label>
@@ -10,28 +12,32 @@
       components with a strong commitment to quality, reliability and customer satisfaction.
     </p>
     <shared-button-component
-      buttonClass="no-bg-primary-color-primary-border large"
+      buttonClass="m-2 rounded-lg border border-[var(--primary-color)] px-6 py-2 text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-[var(--tertiary-color)]"
       [addIcon]="true"
       iconClass="fa-solid fa-arrow-right"
       >Learn More About Us</shared-button-component
     >
   </div>
-  <div class="vertical-divider"></div>
-  <div class="section-points">
-    <span class="point-card">
-      <i class="fa-solid fa-users"></i>
+  <div
+    class="vertical-divider my-12 flex items-center justify-center bg-[var(--metallic-color)] max-[768px]:h-px max-[768px]:w-full"
+  ></div>
+  <div
+    class="section-points flex flex-col items-center justify-center gap-4 p-8 px-12 max-[768px]:w-full"
+  >
+    <span class="point-card flex items-center gap-4 text-[var(--secondary-color)]">
+      <i class="fa-solid fa-users shrink-0 text-2xl text-[var(--metallic-color)]"></i>
       <label class="body-text">Customer Focus</label>
     </span>
-    <span class="point-card">
-      <i class="fa-solid fa-chart-simple"></i>
+    <span class="point-card flex items-center gap-4 text-[var(--secondary-color)]">
+      <i class="fa-solid fa-chart-simple shrink-0 text-2xl text-[var(--metallic-color)]"></i>
       <label class="body-text">Continous Improvement</label>
     </span>
-    <span class="point-card">
-      <i class="fa-regular fa-handshake"></i>
+    <span class="point-card flex items-center gap-4 text-[var(--secondary-color)]">
+      <i class="fa-regular fa-handshake shrink-0 text-2xl text-[var(--metallic-color)]"></i>
       <label class="body-text">Long-Term Partnerships</label>
     </span>
-    <span class="point-card">
-      <i class="fa-solid fa-shield"></i>
+    <span class="point-card flex items-center gap-4 text-[var(--secondary-color)]">
+      <i class="fa-solid fa-shield shrink-0 text-2xl text-[var(--metallic-color)]"></i>
       <label class="body-text">Reliable Manufacturing</label>
     </span>
   </div>

@@ -7,8 +7,7 @@ import { FooterComponent } from './core/layout/footer-component/footer-component
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, NavbarComponent, FooterComponent],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  templateUrl: './app.html'
 })
 export class App {
   protected readonly title = signal('SDForgMac');

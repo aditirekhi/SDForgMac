@@ -1,9 +1,11 @@
-<section class="footer">
-  <div class="connect-banner">
-    <span class="connect-content">
-      <div class="horizontal-line"></div>
-      <span class="banner-text">
-        <label class="card-title banner-main-line"
+<section class="footer flex w-full flex-col items-stretch">
+  <div
+    class="connect-banner flex w-full items-center justify-center gap-12 bg-[var(--primary-color)] p-4 text-[var(--tertiary-color)]"
+  >
+    <span class="connect-content flex items-center gap-2">
+      <div class="h-0.5 w-12 shrink-0 bg-[var(--metallic-color)]"></div>
+      <span class="banner-text flex flex-col gap-1">
+        <label class="card-title whitespace-nowrap"
           >Need a Reliable Manufacturing Partner in Faridabad?</label
         >
         <label class="body-small"
@@ -12,41 +14,47 @@
       </span>
     </span>
     <shared-button-component
-      buttonClass="tertiary-bg-primary-color-no-border medium"
+      buttonClass="m-1 bg-[var(--tertiary-color)] px-4 py-2 text-[var(--primary-color)] hover:bg-[var(--metallic-color)] metallic-sweep"
       [addIcon]="true"
       iconClass="fa-solid fa-arrow-right"
       >Talk to Our Team</shared-button-component
     >
   </div>
-  <div class="meta-data-section">
-    <div class="data-section">
-      <img src="assets/Logo/main-logo.png" alt="Company Logo" class="logo-image" />
+  <div
+    class="meta-data-section flex flex-col items-center gap-4 bg-[var(--secondary-color)] p-4 text-[var(--tertiary-color)]"
+  >
+    <div class="data-section flex items-center justify-between gap-4">
+      <img
+        src="assets/Logo/main-logo.png"
+        alt="Company Logo"
+        class="h-auto w-[15%] rounded object-contain"
+      />
       <label class="small-helper-text">CNC Machining Services</label>
       <label class="small-helper-text">Cold Forging Services</label>
       <label class="small-helper-text">Industrial Component Manufacturing</label>
       <label class="small-helper-text">About Us</label>
       <label class="small-helper-text">Contact Us</label>
-      <div class="vertical-divider"></div>
-      <div class="contact-info-container">
-        <span class="contact-card">
+      <div class="h-auto w-0.5 self-stretch bg-[var(--metallic-color)]"></div>
+      <div class="contact-info-container flex flex-col gap-2">
+        <span class="contact-card flex items-center gap-2">
           <i class="fa-solid fa-phone"></i>
           <label class="small-helper-text">9818878696</label>
         </span>
-        <span class="contact-card">
+        <span class="contact-card flex items-center gap-2">
           <i class="fa-solid fa-envelope"></i>
           <label class="small-helper-text">info@sdforgmac.com</label>
         </span>
-        <span class="contact-card">
+        <span class="contact-card flex items-center gap-2">
           <i class="fa-solid fa-location-dot"></i>
           <label class="small-helper-text">Faridabad, Haryana, India</label>
         </span>
       </div>
-      <div class="social-media-container">
+      <div class="social-media-container flex items-center gap-2">
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin-in"></i>
       </div>
     </div>
-    <div class="horizontal-divider"></div>
+    <div class="h-0.5 w-full self-stretch bg-[var(--metallic-color)]"></div>
     <div>
       <label>&copy; 2024 SD Forgemac. All rights reserved.</label>
     </div>

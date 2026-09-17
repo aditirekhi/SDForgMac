@@ -1,75 +1,61 @@
-.process-section {
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: color-mix(var(--secondary-color) 20%, var(--tertiary-color) 80%);
-}
-
-shared-section-header-component {
-  max-width: 30%;
-}
-
-.process-section i {
-  color: var(--metallic-color);
-  font-size: 2rem;
-}
-
 .info-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  max-width: 15%;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity var(--motion-slow) var(--ease-standard),
+    transform var(--motion-slow) var(--ease-standard);
 }
 
-.index {
-  padding: 0.5rem;
-  aspect-ratio: 2 / 1;
-  background-color: var(--metallic-color);
-  border-radius: 50%;
-  color: var(--tertiary-color);
-  text-align: center;
+.process-section.motion-ready .step-card {
+  opacity: 0;
+  transform: translateY(16px);
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: self-start;
-  justify-content: flex-start;
-  min-width: 0;
+.process-section.is-visible .step-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.process-section.is-visible .step-card:nth-of-type(2) {
+  transition-delay: 400ms;
+}
+.process-section.is-visible .step-card:nth-of-type(3) {
+  transition-delay: 800ms;
+}
+.process-section.is-visible .step-card:nth-of-type(4) {
+  transition-delay: 1200ms;
+}
+
+.connector {
+  opacity: 1;
+  transform: translateX(0);
+  transition:
+    opacity var(--motion-fast) var(--ease-standard),
+    transform var(--motion-fast) var(--ease-standard);
+}
+
+.process-section.motion-ready .connector {
+  opacity: 0;
+  transform: translateX(-8px);
+}
+
+.process-section.is-visible .connector {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 320ms;
+}
+
+.process-section.is-visible .connector:nth-of-type(3) {
+  transition-delay: 720ms;
+}
+.process-section.is-visible .connector:nth-of-type(5) {
+  transition-delay: 1120ms;
 }
 
 .card-body i {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--secondary-color) !important;
+  transition: transform var(--motion-fast) var(--ease-standard);
 }
 
-@media (max-width: 900px) {
-  .process-section {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem 2rem;
-  }
-
-  .process-section > shared-section-header-component {
-    grid-column: 1 / -1;
-  }
-
-  .process-section > .fa-angle-right {
-    display: none;
-  }
-}
-
-@media (max-width: 500px) {
-  .process-section {
-    grid-template-columns: 1fr;
-    padding: 2.5rem 1.25rem;
-    gap: 1.5rem;
-  }
-
-  .process-section > .info-card {
-    width: 100%;
-  }
+.step-card:hover .card-body i {
+  transform: scale(1.06);
 }

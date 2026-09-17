@@ -1,4 +1,9 @@
-<button [class]="buttonClass()">
+<button
+  [class]="
+    'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg transition duration-[var(--motion-base)] ease-[var(--ease-soft)] hover:-translate-y-px disabled:cursor-not-allowed disabled:opacity-60 ' +
+    buttonClass()
+  "
+>
   @if (addIcon() && leftIcon() && iconClass()) {
     <i [class]="iconClass()"></i>
   }

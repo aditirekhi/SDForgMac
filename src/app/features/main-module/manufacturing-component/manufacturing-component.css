@@ -1,65 +1,55 @@
-.manufacturing-section {
-  padding: 3rem;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 1rem 0;
-}
-
 .info-card {
-  border: 1px solid var(--metallic-color);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  display: flex;
-  gap: 1rem;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity var(--motion-slow) var(--ease-standard),
+    transform var(--motion-base) var(--ease-standard),
+    box-shadow var(--motion-base) var(--ease-standard),
+    border-color var(--motion-base) var(--ease-standard);
+}
+
+.manufacturing-section.motion-ready .info-card {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.manufacturing-section.is-visible .info-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.manufacturing-section.is-visible .info-card:nth-child(2) {
+  transition-delay: 140ms;
+}
+.manufacturing-section.is-visible .info-card:nth-child(3) {
+  transition-delay: 280ms;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: 0 0.75rem 1.5rem rgb(17 17 17 / 12%);
 }
 
 .card-icon {
-  background-color: var(--metallic-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 5rem;
-  height: 5rem;
-  aspect-ratio: 1 / 1;
+  transition:
+    background-color var(--motion-base) var(--ease-soft),
+    transform var(--motion-base) var(--ease-standard);
+}
+
+.info-card:hover .card-icon {
+  background-color: color-mix(in srgb, var(--metallic-color) 75%, var(--secondary-color));
+  transform: scale(1.04);
 }
 
 .card-icon i {
-  font-size: 2rem;
-  color: var(--secondary-color);
+  transition: transform var(--motion-fast) var(--ease-standard);
 }
 
-.card-content {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
+.info-card:hover .card-icon i {
+  transform: scale(1.06);
 }
 
 .card-description {
   color: color-mix(in srgb, var(--secondary-color) 80%, transparent 20%);
-}
-
-@media (max-width: 650px) {
-  .manufacturing-section {
-    padding: 2.5rem 1.25rem;
-  }
-
-  .content {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .info-card {
-    padding: 1rem;
-  }
-
-  .card-icon {
-    width: 4rem;
-    height: 4rem;
-    flex: 0 0 4rem;
-  }
 }
