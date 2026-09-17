@@ -7,6 +7,10 @@
   gap: 3rem;
 }
 
+.header {
+  max-width: 20%;
+}
+
 .content {
   display: flex;
   gap: 2rem;
@@ -33,6 +37,11 @@
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
+}
+
+.card-title {
+  min-height: 4rem;
+  text-align: center;
 }
 
 .card-description {

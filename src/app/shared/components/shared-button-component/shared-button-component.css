@@ -97,3 +97,13 @@ button:disabled * {
 .no-bg-primary-color-no-border:hover {
   color: var(--metallic-color);
 }
+
+.tertiary-bg-primary-color-no-border {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+.tertiary-bg-primary-color-no-border:hover {
+  background-color: var(--metallic-color);
+  color: var(--primary-color);
+}

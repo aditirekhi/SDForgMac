@@ -3,8 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 2rem;
   flex-wrap: wrap;
+  background-color: color-mix(var(--secondary-color) 20%, var(--tertiary-color) 80%);
+}
+
+shared-section-header-component {
+  max-width: 30%;
 }
 
 .process-section i {
@@ -16,12 +20,16 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+  max-width: 15%;
 }
 
 .index {
-  padding: 1rem;
+  padding: 0.5rem;
+  aspect-ratio: 2 / 1;
   background-color: var(--metallic-color);
   border-radius: 50%;
+  color: var(--tertiary-color);
+  text-align: center;
 }
 
 .card-body {
@@ -33,7 +41,7 @@
 }
 
 .card-body i {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--secondary-color) !important;
 }

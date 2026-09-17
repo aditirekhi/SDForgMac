@@ -4,9 +4,10 @@ import { ManufacturingComponent } from '../main-module/manufacturing-component/m
 import { WhySdforgmac } from '../main-module/why-sdforgmac/why-sdforgmac';
 import { ApplicationsComponent } from '../main-module/applications-component/applications-component';
 import { ProcessComponent } from '../main-module/process-component/process-component';
+import { AboutUs } from '../main-module/about-us/about-us';
 
 @Component({
-  imports: [HeroComponent, ManufacturingComponent, WhySdforgmac, ApplicationsComponent, ProcessComponent],
+  imports: [HeroComponent, ManufacturingComponent, WhySdforgmac, ApplicationsComponent, ProcessComponent, AboutUs],
   selector: 'main-component',
   styleUrl: './main-component.css',
   templateUrl: './main-component.html',
